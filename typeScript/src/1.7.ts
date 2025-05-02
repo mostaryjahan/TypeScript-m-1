@@ -3,8 +3,7 @@
   //rest operator
   //destructuring
 
-  //spread operator
-
+  //spread operator------------------------------->>>>>>
   //array spread
   const city1: string[] = ["dhaka", "ctg", "khulna"];
   const city2: string[] = ["rajshahi, rangpur", "sylhet"];
@@ -16,7 +15,7 @@
   //object spread
   const person = { name: "Rain", age: 21 };
   //   const person: { name: string; age: number } = { name: "Rain", age: 21 };
-  
+
   // type Person = {
   //     name: string;
   //     age: number;
@@ -30,11 +29,16 @@
 
   console.log(user); // { name: 'Rain', age: 21, email: 'rain@example.com' }
 
-
-  //rest operator-->
-  const allFruits = (...fruits: string[]) => {
+  //rest operator----------------------------------->>>>>
+  function allFruits(...fruits: string[]) {
     fruits.forEach((fruit: string) => console.log(`many fruits ${fruit}`));
-  };
+  }
 
   allFruits("apple", "banana", "lichi", "mango");
+  console.log(allFruits);
+
+
+
+
+
 }
