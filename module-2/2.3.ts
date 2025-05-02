@@ -46,7 +46,17 @@ const userID1 : GenericTuple<number,{name: string, email:string}>
   = [123,{name: "ss", email: "aa"}]
 
 
+//Generic with type
+type UserID2 = {
+    name: string;
+    email: string;
+}
 
+//Generic with interface
+type UserID3 = {
+    name: string;
+    email: string;
+}
 
 
 
