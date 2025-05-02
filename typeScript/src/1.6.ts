@@ -1,3 +1,4 @@
+{
 //normal function
 // arrow function
 
@@ -6,8 +7,8 @@ function add(num1: number = 10, num2: number = 20): number {
   return num1 + num2;
 }
 
-add(2, "2"); //type error cause number+ string
-
+// add(2, "2"); //type error cause number+ string
+console.log(add(2, 3));
 // arrow function
 const addArrow = (num1: number, num2: number): number => num1 + num2;
 
@@ -35,3 +36,4 @@ const superRich = {
 const array: number[] = [1, 2, 3, 4];
 
 const newArray: number[] = array.map((elem: number): number => elem * elem);
+}
