@@ -1,4 +1,8 @@
 "use strict";
 {
-    const newDeveloper = "backendDeveloper";
+    const fullStackDeveloper = {
+        skills: ["HTML", "CSS"],
+        designation1: "frontend",
+        designation2: "backend"
+    };
 }
