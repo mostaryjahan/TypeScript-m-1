@@ -9,34 +9,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 {
-    //Asynchronous typescript
-    //promise
-    // type Something = {something: string}
-    //   //simulate 
-    //   const createPromise = () : Promise<Something> =>{
-    //     return new Promise<Something>((resolve, reject) => {
-    //         const data : Something = {something: "something"};
-    //         if (data){
-    //             resolve(data)
-    //         }else {
-    //             reject("failed to load data")
-    //         }
-    //     })
-    //   }
-    //   //calling create promise function 
-    //   const showData = async() : Promise<Something>  => {
-    //   const data : Something = await createPromise();
-    //   return data;
-    // //   console.log(data);
-    //   }
-    //   showData()
-    //with json fetch
-    const getTodo = () => __awaiter(void 0, void 0, void 0, function* () {
-        const response = yield fetch("https://jsonplaceholder.typicode.com/todos/1");
-        const data = yield response.json();
-        console.log(data);
-    });
-    getTodo();
     //simulate 
     const createPromise = () => {
         return new Promise((resolve, reject) => {
@@ -56,5 +28,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         //   console.log(data);
     });
     showData();
+    const getTodo = () => __awaiter(void 0, void 0, void 0, function* () {
+        const response = yield fetch("https://jsonplaceholder.typicode.com/todos/1");
+        const data = yield response.json();
+        return data;
+        //    console.log(data);
+    });
+    getTodo();
     //
 }
