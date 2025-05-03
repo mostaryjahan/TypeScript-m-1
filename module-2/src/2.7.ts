@@ -12,7 +12,7 @@
 
   type Owner2 = keyof Vehicle; //keyof operator
 
-  const person1: Owner2 = "";
+//   const person1: Owner2 = "";
 
   // const user = {
   //     name: "x",
