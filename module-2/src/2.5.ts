@@ -76,5 +76,21 @@
   const student1 = addCourse({name: "a", email: "g", devType: "full"})
   const student2 = addCourse({name: "a", email: "g", isGood: true})
 
+
+  //practice
+  const practice = <T, Q>(student : T , age: Q): T & { course: string; age: Q } => {
+    const course = "next level"
+
+    return {
+        ...student,
+        course,
+        age
+    }
+  }
+
+  const student10 = practice({name: "a", email: "g", devType: "full"}, null)
+  const student20 = practice({name: "a", email: "g", isGood: true}, null);
+  console.log({student10});
+
   //
 }
