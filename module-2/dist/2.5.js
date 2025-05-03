@@ -41,7 +41,8 @@
     //practice
     const practice = (student, age) => {
         const course = "next level";
-        return Object.assign(Object.assign({}, student), { course });
+        return Object.assign(Object.assign({}, student), { course,
+            age });
     };
     const student10 = practice({ name: "a", email: "g", devType: "full" }, null);
     const student20 = practice({ name: "a", email: "g", isGood: true }, null);
