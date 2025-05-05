@@ -35,7 +35,7 @@
     }
 
 const student1 = new Student("mr.x", 20 , "BD");
-student1.
+student1
 
 
 // example 2
@@ -62,7 +62,7 @@ class Teacher extends Person {
         }
 }
 const teacher1 = new Teacher("mr.x", 40 , "BD", "prof");
-teacher1.
+console.log({teacher1});
 
 
 
