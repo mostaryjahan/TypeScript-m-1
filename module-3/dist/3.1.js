@@ -20,7 +20,6 @@
     }
     const dog = new Animal("deshi kutta", 2, "gheu gheu");
     const cat = new Animal("deshi billi", 2, "mew mew");
-    cat.
-    ;
+    cat.makeSound();
     //
 }
