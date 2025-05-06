@@ -3,22 +3,31 @@
   class BankAccount {
     public readonly id: number;
     public name: string;
-    private balance: number;
+    // private _balance: number; kothao paoya jabe na
+    protected _balance: number; //child e paoya jay. ex: studentAccount
 
     constructor(id: number, name: string, balance: number) {
       this.name = name;
       this.id = id;
-      this.balance = balance;
+      this._balance = balance;
     }
 
     //private er karon e ekhane modifiy korte hobe class er moddhe
-    addDeposit(amount: number) {
-      this.balance = this.balance + amount;
+   public addDeposit(amount: number) {
+      this._balance = this._balance + amount;
     }
 
-    getBalance() {
-      return this.balance;
+  public  getBalance() {
+      return this._balance;
     }
+  };
+
+  //alada exapmle
+
+  class StudentAccount extends BankAccount{
+  test(){
+    this.
+  }
   }
 
   const poorAccount = new BankAccount(111, "Elon mask", 10);
@@ -33,7 +42,7 @@
 
 
 
-  
+
 
   //
 }
