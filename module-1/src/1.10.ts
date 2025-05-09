@@ -1,25 +1,25 @@
 {
     //Union Types
-    // type FrontendDeveloper = "fresher" | "junior"
-    // type FullStackDeveloper = "frontedDeveloper" | "backendDeveloper";
-    // type Developer = FrontendDeveloper | FullStackDeveloper
+    type FrontendDeveloper1 = "fresher" | "junior"
+    type FullStackDeveloper1 = "frontedDeveloper" | "backendDeveloper";
+    type Developer1 = FrontendDeveloper1 | FullStackDeveloper1
 
 
-    // const newDeveloper: Developer = "junior"
+    const newDeveloper1: Developer1 = "junior"
 
 
-    // type User = {
-    //     name: string;
-    //     email: string;
-    //     gender: "male" | "female";
-    //     bloodGroup?: "O+" | "A+" |"B+" | "AB+"
-    // }
+    type User = {
+        name: string;
+        email: string;
+        gender: "male" | "female";
+        bloodGroup?: "O+" | "A+" |"B+" | "AB+"
+    }
 
-    // const user1: User = {
-    //     name: "rain",
-    //     email: "rain@email.com",
-    //     gender: "female"
-    // }
+    const user1: User = {
+        name: "rain",
+        email: "rain@email.com",
+        gender: "female"
+    }
 
 
 //intersection type---------------------------------------->

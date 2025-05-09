@@ -7,3 +7,7 @@ function showWelcomeMessage(): void {
   }
   
   showWelcomeMessage();
+
+
+  const greeting: string = "hello ts";
+  console.log(greeting);
